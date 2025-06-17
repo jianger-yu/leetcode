@@ -11,7 +11,7 @@ public:
             arr[++size] = head;
             head = head -> next;
         }
-        int i = 0, t = size / k;
+        int i = 0, t = (size+1) / k;
         for(i = 0; i < t; i++){
             int st = i * k;
             for(int j = st; j < st + k; j++){
